@@ -1,0 +1,319 @@
+*
+{
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --span:#F24259;
+    --font-family-raleway: 'raleway',sans-serif;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+}
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-work{
+    width: 100%;
+    display: flex;
+    height: 90px;
+}
+.logo-image{
+    width: 100%;
+}
+.logo-image img{
+    width: 120px;
+}
+.nav-work{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+}
+.list-work{
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+.list-work li a{
+    color: #ffff;
+    font-size: 14px;
+}
+.banner-work{
+    width: 100%;
+    background-image: url(./image/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 550px;
+    position: relative;
+    top: 0;
+}
+.banner-work .svg{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.banner-work .svg svg{
+    fill: #fff;
+}
+.banner-work::after{
+    content: "0";
+    background: #000;
+    position: absolute;
+    height: 550px;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    opacity: 0.5;
+}
+.text-work{
+    text-align: center;
+    color: #fff;
+    padding-top: 13%;
+    position: relative;
+    z-index: 2;
+}
+.text-work h1{
+    margin: 0;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.text-work h2{
+    font-size: 55px;
+    margin: 21px 0px 22px 0;
+    letter-spacing: 3px;
+}
+.two-btns{
+    width: 100%;
+    margin-top: 35px;
+}
+.two-btns .btns{
+    padding: 10px 30px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 30px 2px 0;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    color: #f6f6f6;
+}
+.two-btns .btn-start{
+    background: var(--span);
+    border: 1px solid var(--span);
+}
+.text-work .two-btns .btns:hover{
+    border-color: #fff;
+    color: #000;
+}
+.text-work .btns:after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    z-index: 1;
+    background: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.text-work .two-btns .btns:hover:after{
+    width: 100%;
+    left: 0;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
+.text-work .two-btns .btns span{
+    position: relative;
+    z-index: 2;
+}
+
+/* ----scnd-section---- */
+
+.graph-section{
+    width: 100%;
+    padding-top: 5%;
+}
+.agency-text{
+    text-align: center;
+    width: 100%;
+}
+.agency-text h3{
+    font-weight: lighter;
+    font-family: var(--font-family-raleway);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.agency-text p{
+    color: #666;
+    font-size: 15px;
+    line-height: 21px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+.left-upper{
+    margin-bottom: 35px;
+}
+.row .left-upper h4{
+    border-left: 1px solid #eee;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: lighter;
+    font-family: 'Raleway';
+    position: relative;
+    padding: 0 0 0 16px;
+}
+.row .left-upper h4::before{
+    content: "";
+    width: 1px;
+    height: 35px;
+    background: #F24259;
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+}
+.row .left-upper h4 span{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.left-row{
+    width: 50%;
+}
+.row p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.left-row a .playbtn{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #F24259;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+.left-row .small-text{
+    margin-left: 10px;
+    font-size: 15px;
+    color: #666;
+}
+
+.right-row{
+    width: 50%;
+    padding-left: 9%;
+    margin-top: -20px;
+}
+.right-row .skills .prog-item{
+        margin-bottom: 25px;
+}
+.right-row .skills .prog-item p{
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.right-row .skills .prog-item .skills-progress{
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    border-radius: 5px;
+    position: relative;
+}
+.right-row .skills .prog-item .skills-progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #F24259;
+    width: 10%;
+    border-radius: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.right-row .skills .prog-item .skills-progress span::after{
+    content: attr(data-value);
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 10px;
+    color: #777;
+}
+.progressbar-active{
+	animation-name: progress;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.4s;
+}
+@keyframes progress{
+	0%{
+		width:0;
+	}
+	100%{
+		width:100%;
+	}
+}
